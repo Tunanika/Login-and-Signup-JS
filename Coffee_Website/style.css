@@ -1,0 +1,79 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 1%;
+    box-sizing: border-box;
+}
+.FunGrillSizzle h1{
+    font-size: 60px;
+    color: #141414;
+    text-align:start;
+    width: 800px;
+    height: 89px;
+    position: absolute;
+    margin-top: 150px;
+}
+.FunGrillSizzle h2{
+font-size: 30px;
+color: #191900;
+line-height: 40px;
+width: 26%;
+position: absolute;
+margin-top: 285px;       
+}
+.FunGrillSizzle h3{
+font-size: 15px;
+color: #000000;
+letter-spacing: 0;
+line-height: 20px;
+width: 472px;
+height: 203px;
+position: absolute;
+margin-top: 383px;
+}
+.image1{
+box-shadow: 16px 23px 35px 6px rgba(0,0,0,0.50);
+border-radius: 30px;
+width: 240px;
+height: 240px;
+object-fit:cover;
+border-width: 0px;
+border: none;
+position: absolute;
+margin-top: 650px;
+cursor: pointer;
+}
+.image2{
+box-shadow: 16px 23px 35px 6px rgba(0,0,0,0.50);
+border-radius: 30px;
+width: 240px;
+height: 240px;
+object-fit:cover;
+border-width: 0px;
+border: none;
+position: absolute;
+margin-top: 650px;
+margin-left: 367px;
+cursor: pointer;
+}
+.image3{
+width: 41%;
+height: 670px;
+box-shadow: 16px 23px 35px 12px rgba(0,0,0,0.50), inset 0 1px 35px 3px rgba(0,0,0,0.50);
+border-radius: 30px;
+object-fit: cover;
+position: absolute;
+margin-left: 799px;
+margin-top: 160px;
+}
+.arrow{
+width: 50px;
+height: 100px;
+position: absolute;
+margin-left: 670px;
+margin-top: 709px;
+cursor: pointer;
+}
+
+@media screen and (max-width: 1440px){
+
+}
