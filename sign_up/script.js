@@ -81,7 +81,7 @@ document
             ) {
               //Check for already existing usernames
               alert(
-                "This username or email already exists. Please choose another username or another mail adress."
+                "This username or email already exists. Please choose another username or another mail address."
               );
               canSignUp = false;
               break;
@@ -101,7 +101,9 @@ document
               // Error handler
               console.error("Error:", error);
               error = true;
-              alert("Error Occured Please Try Again At a Later Time. Sorry for the inconvenience.");
+              alert(
+                "Error Ocurred Please Try Again At a Later Time. Sorry for the inconvenience."
+              );
             });
             if (error == false) {
               window.location.href = ".././Coffee_Website/index.html"; //Open the necessary website if there is no error
@@ -112,7 +114,7 @@ document
           // Error handler
           console.error("Error: ", error.message);
           error = true;
-          alert("Server Error Occured Please Try Again At a Later Time");
+          alert("Server Error Ocurred Please Try Again At a Later Time");
         });
     }
   });
