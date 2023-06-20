@@ -14,6 +14,8 @@ document
     var noSpaceAlertGiven = false;
     var canSignUp = false;
 
+    var error = false;
+
     console.log("Name Input: ", nameInput.value);
     console.log("Password Input: ", passwordInput.value);
 
@@ -98,9 +100,19 @@ document
             }).catch((error) => {
               // Error handler
               console.error("Error:", error);
+              error = true;
+              alert("Error Occured Please Try Again At a Later Time. Sorry for the inconvenience.");
             });
-            window.location.href = ".././Coffee_Website/index.html"; //Open the necessary website
+            if (error == false) {
+              window.location.href = ".././Coffee_Website/index.html"; //Open the necessary website if there is no error
+            }
           }
+        })
+        .catch((error) => {
+          // Error handler
+          console.error("Error: ", error.message);
+          error = true;
+          alert("Server Error Occured Please Try Again At a Later Time");
         });
     }
   });
