@@ -99,7 +99,7 @@ document
               // Error handler
               console.error("Error:", error);
             });
-            window.location.href = ".././Coffee_Website/index.html";
+            window.location.href = ".././Coffee_Website/index.html"; //Open the necessary website
           }
         });
     }
