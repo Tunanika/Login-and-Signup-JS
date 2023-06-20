@@ -99,10 +99,8 @@ document
               // Error handler
               console.error("Error:", error);
             });
-            alert("You have succesfully signed up!");
-            window.location.href = "../Coffee_Website/index.html";
+            window.location.href = ".././Coffee_Website/index.html";
           }
         });
     }
-    this.reset();
   });

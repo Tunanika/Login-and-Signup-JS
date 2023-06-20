@@ -35,7 +35,6 @@ document
               data[i]["Password"] == passwordInput.value
             ) {
               console.log("Login successful");
-              alert("Login successful");
               login = true;
               window.location.href = "/Coffee_Website/index.html";
               break;
