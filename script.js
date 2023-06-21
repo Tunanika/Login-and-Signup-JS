@@ -27,6 +27,7 @@ document
         } else {
           console.log("Raw data: ", data);
           for (i = 0; i < data.length; i++) {
+            //Check the user credentials
             console.log("Checking Username: ", data[i]["username"]);
             console.log("Checking password: ", data[i]["Password"]);
             if (
@@ -37,7 +38,7 @@ document
               console.log("Login successful");
               login = true;
               window.location.href = "/Coffee_Website/index.html";
-              break;
+              break; //exit the loop when correct username and password are entered
             }
           }
         }
