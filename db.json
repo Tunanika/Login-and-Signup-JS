@@ -1,3 +1,19 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "username": "user1",
+      "Password": "pass1",
+      "email": "user1@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "User1",
+      "Password": "pass1",
+      "email": "mail1",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
