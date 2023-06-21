@@ -52,7 +52,7 @@ document
       .catch((error) => {
         // Error handler
         console.error("Error:", error);
-        alert("Internal error occured please try again later!!!");
+        alert("Internal error ocurred please try again later!!!");
       });
 
     console.log(nameInput.value);
