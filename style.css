@@ -19,11 +19,12 @@ body {
 }
 
 .screen {
-	background: linear-gradient(90deg, #5D54A4, #7C78B8);
+	background: linear-gradient(90deg, #000000d8, #807ad2);
 	position: relative;
 	height: 600px;
 	width: 360px;
 	box-shadow: 0px 0px 24px #5C5696;
+	border-radius: 25px;
 }
 
 .screen__content {
@@ -34,7 +35,7 @@ body {
 }
 
 .heading {
-	color: #5F58A3;
+	color: #c5aeff;
 	width: 120px;
 	height: 80px;
 	margin-left: 30px;
@@ -52,7 +53,7 @@ body {
 	z-index: 0;
 	-webkit-clip-path: inset(0 0 0 0);
 	clip-path: inset(0 0 0 0);
-	border-radius: 26px;
+	display: none;
 }
 
 .screen__background__shape {
@@ -135,7 +136,7 @@ body {
 }
 
 .login__submit {
-	background: #fff;
+	background: #9794d2;
 	font-size: 14px;
 	margin-top: 30px;
 	padding: 16px 20px;
@@ -162,7 +163,10 @@ body {
 .button__icon {
 	font-size: 24px;
 	margin-left: auto;
-	color: #7875B5;
+	color: #ffffff;
+}
+.button__text{
+	color:rgb(41, 0, 92);
 }
 
 .social-login {
@@ -177,7 +181,7 @@ body {
 
 .sign_up {
 	text-decoration: none;
-	color: white;
+	color: rgb(25, 0, 64);
 }
 
 .social-login__icon:hover {
@@ -185,5 +189,5 @@ body {
 }
 
 .hereText {
-	color: lightskyblue;
+	color: rgb(210, 189, 254);
 }
