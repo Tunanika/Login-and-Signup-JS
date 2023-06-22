@@ -127,6 +127,7 @@ body {
 	transition: .2s;
 }
 
+
 .signup__input:active,
 .signup__input:focus,
 .signup__input:hover {
@@ -177,4 +178,10 @@ body {
 
 .hereText {
 	color: lightpink;
+}
+.password_text{
+position: absolute;
+display:none;
+background-color: white;
+border-radius: 15px;
 }
