@@ -1,8 +1,30 @@
+var passwordField = document.getElementById("password");
+var passwordText = document.getElementById("password_text");
+
+function passCheck(password) {
+  let containsNumber = false;
+  let containsCharacter = false;
+  for (i = 0; i < password.length; i++) {
+    if (!isNaN(password[i])) {
+      containsNumber = true;
+    }
+    if (/^[a-zA-Z]$/.test(password[i])) {
+      containsCharacter = true;
+    }
+  }
+  console.log(containsNumber);
+  console.log(containsCharacter);
+  !containsNumber
+    ? (passwordText.innerHTML = "Please make sure your password has a number.")
+    : (passwordText.innerHTML =
+        "Please make sure your password has a character.");
+  return containsNumber && containsCharacter;
+}
+
 document
   .getElementById("signupForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-
     var formData = new FormData(this); // formData
 
     var nameInput = document.getElementById("name");
@@ -12,6 +34,7 @@ document
     var login = false;
     var formEmpty = false;
     var noSpaceAlertGiven = false;
+    var alreadyExist = true;
     var canSignUp = false;
 
     var error = false;
@@ -70,6 +93,7 @@ document
         Password: passwordInput.value,
         email: emailInput.value,
       };
+      console.log("Type of pass: ", typeof credentials.Password);
 
       fetch("http://localhost:3000/posts", { method: "GET" }) //Get all the accounts from the server
         .then((response) => response.json())
@@ -83,12 +107,13 @@ document
               alert(
                 "This username or email already exists. Please choose another username or another mail address."
               );
-              canSignUp = false;
+              alreadyExist = true;
               break;
             } else {
-              canSignUp = true;
+              alreadyExist = false;
             }
           }
+          canSignUp = !alreadyExist && passCheck(credentials.Password);
           if (canSignUp == true) {
             fetch("http://localhost:3000/posts", {
               //posting user credentials to the server
@@ -118,3 +143,14 @@ document
         });
     }
   });
+
+let showElementFunc = function () {
+  document.getElementById("password_text").style.display = "block";
+};
+
+let hideElementFunc = function () {
+  document.getElementById("password_text").style.display = "none";
+};
+
+passwordField.addEventListener("mouseover", showElementFunc);
+passwordField.addEventListener("mouseout", hideElementFunc);

@@ -18,7 +18,7 @@
 			<link
 				href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
 				rel="stylesheet">
-			<script src="Script.js"></script>
+			<script src="Script.js" async></script>
 		</head>
 
 		<div class="container">
@@ -40,8 +40,10 @@
 							<i class="signup__icon fas fa-lock"></i>
 							<input type="password" class="signup__input" id="password"
 								placeholder="Password">
+							<p class="password_text" id='password_text'>Password must contain at
+								least one number and a character</p>
 						</div>
-						<button class="button signup__submit">
+						<button class="button signup__submit" id="password">
 							<span class="button__text">Sign Up Now!</span>
 							<i class="button__icon fas fa-chevron-right"></i>
 						</button>
