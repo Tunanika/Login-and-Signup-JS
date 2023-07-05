@@ -120,6 +120,7 @@ body {
 .login__input {
 	border: none;
 	border-bottom: 2px solid #D1D1D4;
+	color: rgb(182, 157, 237);
 	background: none;
 	padding: 10px;
 	padding-left: 24px;
@@ -181,7 +182,7 @@ body {
 
 .sign_up {
 	text-decoration: none;
-	color: rgb(25, 0, 64);
+	color: rgb(43, 17, 85);
 }
 
 .social-login__icon:hover {
@@ -190,4 +191,4 @@ body {
 
 .hereText {
 	color: rgb(210, 189, 254);
-}
+}""
